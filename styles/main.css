@@ -10,7 +10,10 @@
   margin: 20px;
 }
 .header__image {
-  background-color: white;
+  width: 70px;
+}
+.header__game {
+  display: flex;
 }
 
 .header__game-ball {
@@ -24,6 +27,9 @@
   border-style: solid;
   border-width: 4px;
   border-color: #15c3b1;
+}
+.header__game-play {
+  padding-left: 10px;
 }
 .fas,
 .fa-play {

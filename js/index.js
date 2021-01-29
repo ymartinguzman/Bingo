@@ -3,4 +3,9 @@
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
-console.log(getRandomNumber(20) * 100);
+function showBalls() {
+  for (let i = 0; i < 20; i++) {
+    console.log(getRandomNumber(100));
+  }
+}
+showBalls();
