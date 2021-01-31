@@ -3,11 +3,15 @@
 const balls = document.querySelector('.main__balls');
 const newBall = document.querySelector('.header__game-ball');
 const game = document.querySelector('.main__game');
+const play = document.querySelector('header__game-play');
+console.log(play);
 
+//Get random number
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 
+//Random numbers in game
 function showBalls() {
   let htmlBalls = '';
 
@@ -19,8 +23,7 @@ function showBalls() {
   balls.innerHTML += htmlBalls;
 }
 
-newBall.addEventListener('click', showBalls);
-
+//Random card
 function bingoCard() {
   let htmlBingo = '';
 
@@ -32,3 +35,11 @@ function bingoCard() {
 }
 
 bingoCard();
+
+//SetInterval
+
+// setInterval(showBalls, 2000);
+
+//Events
+newBall.addEventListener('click', showBalls);
+play.addEventListener('click', setInterval);
