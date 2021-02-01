@@ -8,7 +8,7 @@ const stopBtn = document.querySelector('.header__btn-stop');
 
 //Get random number
 function getRandomNumber(max) {
-  return Math.ceil(Math.random() * max);
+  return Math.ceil(Math.random() * 99 + 1);
 }
 
 const showArrayNumbers = [];
@@ -19,21 +19,24 @@ function showBalls(ev) {
   let htmlBalls = '';
 
   for (let i = 0; i < 1; i++) {
-    const number = getRandomNumber(100);
+    const number = getRandomNumber(99);
     htmlBalls += `<div class="main__balls--ball"> ${number}</div>`;
     showArrayNumbers.push(number);
+    console.log(showArrayNumbers);
   }
 
   balls.innerHTML += htmlBalls;
 }
 
 //Random card
+
 function bingoCard() {
   let htmlBingo = '';
   for (let i = 0; i < 20; i++) {
-    const number = getRandomNumber(100);
+    const number = getRandomNumber(99);
     htmlBingo += `<div class="main__game--ball"> ${number}</div>`;
     cardArrayNumbers.push(number);
+    console.log(cardArrayNumbers);
   }
   game.innerHTML += htmlBingo;
 }
@@ -43,15 +46,11 @@ bingoCard();
 //SetInterval to show balls
 let timer;
 function autoBalls() {
-  timer = setInterval(showBalls, 3000);
-
-  console.log();
-
-  // function stopBalls() {
-  //   if (showArrayNumbers.length === 10) {
-  //     console.log(number.length);
-
-  //   }
+  timer = setInterval(showBalls, 1000);
+  // if (showBalls.length <= 10) {
+  //   console.log('Hola');
+  // } else {
+  //   timer;
   // }
 }
 
@@ -59,6 +58,9 @@ function autoBalls() {
 function stopBalls() {
   clearInterval(timer);
 }
+
+//Compare arrays to make bingo
+// function bingo() {}
 
 //Events
 newBallBtn.addEventListener('click', showBalls);
