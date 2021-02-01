@@ -8,7 +8,7 @@ const stopBtn = document.querySelector('.header__btn-stop');
 
 //Get random number
 function getRandomNumber(max) {
-  return Math.ceil(Math.random() * 99 + 1);
+  return Math.ceil(Math.random() * 98 + 1);
 }
 
 const showArrayNumbers = [];
