@@ -1,9 +1,10 @@
 'use strict';
 
 const balls = document.querySelector('.main__balls');
-const newBall = document.querySelector('.header__game-ball');
+const newBallBtn = document.querySelector('.header__btn-ball');
 const game = document.querySelector('.main__game');
-const play = document.querySelector('.header__game-play');
+const playBtn = document.querySelector('.header__btn-play');
+const stopBtn = document.querySelector('.header__btn-stop');
 
 //Get random number
 function getRandomNumber(max) {
@@ -12,6 +13,7 @@ function getRandomNumber(max) {
 
 const showArrayNumbers = [];
 const cardArrayNumbers = [];
+
 //Random numbers in game
 function showBalls(ev) {
   let htmlBalls = '';
@@ -38,16 +40,27 @@ function bingoCard() {
 
 bingoCard();
 
-//SetInterval
-
+//SetInterval to show balls
+let timer;
 function autoBalls() {
-  setInterval(showBalls, 2000);
-  // if (showArrayNumbers.length === 10) {
-  //   clearInterval(setInterval);
+  timer = setInterval(showBalls, 3000);
+
+  console.log();
+
+  // function stopBalls() {
+  //   if (showArrayNumbers.length === 10) {
+  //     console.log(number.length);
+
+  //   }
   // }
-  // console.log(clearInterval(setInterval));
+}
+
+//Stop setInterval
+function stopBalls() {
+  clearInterval(timer);
 }
 
 //Events
-newBall.addEventListener('click', showBalls);
-play.addEventListener('click', autoBalls);
+newBallBtn.addEventListener('click', showBalls);
+playBtn.addEventListener('click', autoBalls);
+stopBtn.addEventListener('click', stopBalls);

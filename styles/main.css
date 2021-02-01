@@ -16,7 +16,7 @@
   display: flex;
 }
 
-.header__game-ball {
+.header__btn-ball {
   width: 150px;
   height: 30px;
   background-color: #14d9c4;
@@ -28,9 +28,19 @@
   border-width: 4px;
   border-color: #15c3b1;
 }
-.header__game-play {
-  padding-left: 10px;
+.header__btn-play,
+.header__btn-stop {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
 }
+
+.header__btn-play--image,
+.header__btn-stop--image {
+  width: 30px;
+  height: 30px;
+}
+
 .fas,
 .fa-play {
   color: #14d9c4;
