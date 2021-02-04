@@ -5,6 +5,7 @@ const newBallBtn = document.querySelector('.header__btn-ball');
 const game = document.querySelector('.main__game');
 const playBtn = document.querySelector('.header__btn-play');
 const stopBtn = document.querySelector('.header__btn-stop');
+const bingo = document.querySelector('.congratulations');
 
 //Get random number
 function getRandomNumber(max) {
@@ -17,8 +18,7 @@ const bingoArray = [];
 
 //Handler
 function compareBalls() {
-  console.log(showArrayNumbers[showArrayNumbers.length - 1]);
-
+  let bingo = '';
   if (
     cardArrayNumbers.indexOf(showArrayNumbers[showArrayNumbers.length - 1]) !==
     -1
@@ -33,10 +33,24 @@ function compareBalls() {
     );
     htmlBall.classList.add('inside-balls');
     htmlCard.classList.add('inside-balls');
-    // bingoArray.push(showArrayNumbers[showArrayNumbers.length - 1]);
+    // if (htmlBall.length === 10 && htmlCard.length === 10) {
+    //   console.log('BINGOOOOOO');
+    // }
+    bingoArray.push(showArrayNumbers[showArrayNumbers.length - 1]);
+    if (bingoArray.length === 10) {
+      stopBalls();
+      bingo += `<p>¡¡¡¡¡BINGO!!!!!`;
+      console.log('BINGOOOOOOO');
+    }
   }
 }
 
+//Sing bingo
+// function congratulationsBingo() {
+//   if (showArrayNumbers.classList.contains('inside-balls') === 10) {
+//     console.log('BINGOOOOOO');
+//   }
+// }
 //Random numbers in game
 function showBalls(ev) {
   let htmlBalls = '';
@@ -54,6 +68,7 @@ function showBalls(ev) {
 
   balls.innerHTML += htmlBalls;
   compareBalls();
+  // congratulationsBingo();
 }
 
 //Handler
