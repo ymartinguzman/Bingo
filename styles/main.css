@@ -46,6 +46,14 @@
   color: #14d9c4;
   width: 15px;
 }
+.main__congratulations {
+}
+.js-main__bingo {
+  font-size: 30px;
+  text-align: center;
+  /* font-family: 'Indie Flower'; */
+  font-weight: bold;
+}
 
 .main__balls {
   padding: 10px;

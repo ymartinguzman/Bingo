@@ -5,7 +5,7 @@ const newBallBtn = document.querySelector('.header__btn-ball');
 const game = document.querySelector('.main__game');
 const playBtn = document.querySelector('.header__btn-play');
 const stopBtn = document.querySelector('.header__btn-stop');
-const bingo = document.querySelector('.congratulations');
+const bingo = document.querySelector('.main__congratulations');
 
 //Get random number
 function getRandomNumber(max) {
@@ -18,7 +18,7 @@ const bingoArray = [];
 
 //Handler
 function compareBalls() {
-  let bingo = '';
+  let bingoHtml = '';
   if (
     cardArrayNumbers.indexOf(showArrayNumbers[showArrayNumbers.length - 1]) !==
     -1
@@ -39,9 +39,9 @@ function compareBalls() {
     bingoArray.push(showArrayNumbers[showArrayNumbers.length - 1]);
     if (bingoArray.length === 10) {
       stopBalls();
-      bingo += `<p>¡¡¡¡¡BINGO!!!!!`;
-      console.log('BINGOOOOOOO');
+      bingoHtml += `<p class="js-main__bingo">¡¡¡¡¡BINGO!!!!!</p>`;
     }
+    bingo.innerHTML = bingoHtml;
   }
 }
 
