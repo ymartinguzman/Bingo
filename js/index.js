@@ -24,8 +24,6 @@ function compareBalls() {
     cardArrayNumbers.indexOf(showArrayNumbers[showArrayNumbers.length - 1]) !==
     -1
   ) {
-    console.log('HE entrado y lo he petado');
-
     const htmlBall = document.querySelector(
       `#ball-${showArrayNumbers[showArrayNumbers.length - 1]}`
     );
@@ -81,6 +79,7 @@ function newBingoGame() {
   game.innerHTML = '';
   showArrayNumbers = [];
   balls.innerHTML = '';
+  bingo.innerHTML = '';
   bingoCard();
 }
 
@@ -88,12 +87,6 @@ function newBingoGame() {
 let timer;
 function autoBalls() {
   timer = setInterval(showBalls, 1000);
-
-  // if (showBalls.length <= 10) {
-  //   console.log('Hola');
-  // } else {
-  //   timer;
-  // }
 }
 
 //Stop setInterval
