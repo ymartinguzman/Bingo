@@ -1,10 +1,10 @@
 'use strict';
 
 const balls = document.querySelector('.main__balls');
-const newBallBtn = document.querySelector('.header__btn-ball');
+const newBallBtn = document.querySelector('.main__btn-ball');
 const game = document.querySelector('.main__game');
-const playBtn = document.querySelector('.header__btn-play');
-const stopBtn = document.querySelector('.header__btn-stop');
+const playBtn = document.querySelector('.main__btn-play');
+const stopBtn = document.querySelector('.main__btn-stop');
 const bingo = document.querySelector('.main__congratulations');
 const newGame = document.querySelector('.main__btn-newPlay');
 

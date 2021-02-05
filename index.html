@@ -26,44 +26,41 @@
   <body>
     <header class="header">
       <img
-        class="header__image"
-        title="Logo de Adalab"
-        src="../images/bingo.svg"
-        alt="Página principal de Adalab"
+        src="./images/bingo-title.png"
+        alt="Titulo bingo"
+        title="Palabra bingo con diferentes colores"
+        class="header__title"
       />
-      <p class="header__bingo"></p>
-      <div class="header__game">
-        <button class="header__btn-ball">Saca una bolita</button>
-        <button class="header__btn-play">
-          <img
-            src="./images/punta-de-flecha.svg"
-            alt=""
-            class="header__btn-play--image"
-          />
-        </button>
-        <button class="header__btn-stop">
-          <img
-            src="./images/square.svg"
-            alt=""
-            class="header__btn-stop--image"
-          />
-        </button>
-        <!-- <img
-          class="header__game-play"
-          title="Play the game"
-          src="./images/punta-de-flecha.svg"
-          alt="Icono para empezar el juego"
-        /> -->
-      </div>
     </header>
-    <main class="main">
-      <div class="main__congratulations"></div>
-      <div class="main__balls"><p>Bolitas</p></div>
 
-      <div class="main__game"><p>Mi cartón</p></div>
-
-      <p class="main__message"></p>
-      <button class="main__btn-newPlay">Nuevo cartón</button>
+    <main>
+      <!-- <p class="header__bingo"></p> -->
+      <div class="main">
+        <div class="main__btn">
+          <button class="main__btn-ball">Saca una bolita</button>
+          <button class="main__btn-play">
+            <img
+              src="./images/punta-de-flecha.svg"
+              alt="Icono play"
+              title="Icono para activar el juego"
+              class="main__btn-play--image"
+            />
+          </button>
+          <button class="main__btn-stop">
+            <img
+              src="./images/square.svg"
+              alt="Icono stop"
+              title="Icono para parar el juego"
+              class="main__btn-stop--image"
+            />
+          </button>
+        </div>
+        <div class="main__congratulations"></div>
+        <div class="main__balls"><p>Bolitas</p></div>
+        <div class="main__game"></div>
+        <!-- <p class="main__message"></p> -->
+        <button class="main__btn-newPlay">Nuevo cartón</button>
+      </div>
     </main>
     <script src="../js/index.js"></script>
   </body>

@@ -2,21 +2,25 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #d3f8f4;
 }
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin: 20px;
 }
-.header__image {
-  width: 70px;
+.header__title {
+  text-align: center;
 }
-.header__game {
+.main {
+  border-color: green;
+  background-color: hotpink;
+  margin: 50px;
+}
+.main__btn {
   display: flex;
 }
 
-.header__btn-ball {
+.main__btn-ball {
   width: 150px;
   height: 30px;
   background-color: #14d9c4;
@@ -28,15 +32,15 @@
   border-width: 4px;
   border-color: #15c3b1;
 }
-.header__btn-play,
-.header__btn-stop {
+.main__btn-play,
+.main__btn-stop {
   margin-left: 10px;
   width: 30px;
   height: 30px;
 }
 
-.header__btn-play--image,
-.header__btn-stop--image {
+.main__btn-play--image,
+.main__btn-stop--image {
   width: 30px;
   height: 30px;
 }
@@ -55,17 +59,22 @@
   font-weight: bold;
 }
 
-.main__balls {
-  padding: 10px;
-  border-style: solid;
-  border-width: 7px;
-  border-color: #15c3b1;
-  margin: 20px;
-  font-family: 'Indie Flower';
-  font-size: 20px;
-  font-weight: bold;
+.main__game {
+  border-color: crimson;
+  background-color: blue;
+  border-style: groove;
+  padding: 15px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
-.main__game,
+.main__game--ball {
+  width: 60px;
+  height: 60px;
+  padding-top: 20px;
+  text-align: center;
+}
 .main__balls {
   padding: 10px;
   border-style: solid;
@@ -79,7 +88,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.main__game--ball,
+
 .main__balls--ball {
   width: 60px;
   height: 60px;
