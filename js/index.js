@@ -34,6 +34,7 @@ function compareBalls() {
     bingoArray.push(showArrayNumbers[showArrayNumbers.length - 1]);
     if (bingoArray.length === 12) {
       stopBalls();
+
       bingoHtml += `<p class="js-main__bingo">¡¡¡¡¡BINGO!!!!!</p>`;
     }
     bingo.innerHTML = bingoHtml;
@@ -95,7 +96,7 @@ function stopBalls() {
 }
 
 //Events
-newBallBtn.addEventListener('click', showBalls);
+// newBallBtn.addEventListener('click', showBalls);
 playBtn.addEventListener('click', autoBalls);
 stopBtn.addEventListener('click', stopBalls);
 newGame.addEventListener('click', newBingoGame);
