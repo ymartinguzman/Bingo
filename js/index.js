@@ -32,7 +32,7 @@ function compareBalls() {
     );
     htmlCard.classList.add('inside-balls');
     bingoArray.push(showArrayNumbers[showArrayNumbers.length - 1]);
-    if (bingoArray.length === 10) {
+    if (bingoArray.length === 12) {
       stopBalls();
       bingoHtml += `<p class="js-main__bingo">¡¡¡¡¡BINGO!!!!!</p>`;
     }
@@ -44,7 +44,7 @@ function compareBalls() {
 function showBalls(ev) {
   let htmlBalls = '';
   for (let i = 0; i < 1; i++) {
-    const number = getRandomNumber(30);
+    const number = getRandomNumber(20);
     if (!showArrayNumbers.includes(number)) {
       htmlBalls += `<div class="main__balls--ball" id="ball-${number}"> ${number}</div>`;
       showArrayNumbers.push(number);
@@ -61,8 +61,8 @@ function showBalls(ev) {
 //Random card
 function bingoCard() {
   let htmlBingo = '';
-  for (let i = 0; i < 10; i++) {
-    const number = getRandomNumber(30);
+  for (let i = 0; i < 12; i++) {
+    const number = getRandomNumber(20);
     if (!cardArrayNumbers.includes(number)) {
       htmlBingo += `<div class="main__game--ball" id="card-${number}"> ${number}</div>`;
       cardArrayNumbers.push(number);

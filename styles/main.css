@@ -6,18 +6,23 @@
 .header {
   display: flex;
   flex-direction: column;
-  margin: 20px;
 }
 .header__title {
   text-align: center;
 }
 .main {
   border-color: green;
-  background-color: hotpink;
-  margin: 50px;
+  background-color: #d3f8f4;
+  margin: 0 50px 50px 50px;
 }
 .main__btn {
   display: flex;
+}
+.main__title {
+  font-size: 24px;
+  font-family: 'Indie Flower';
+  text-align: center;
+  padding-top: 15px;
 }
 
 .main__btn-ball {
@@ -61,25 +66,35 @@
 
 .main__game {
   border-color: crimson;
-  background-color: blue;
-  border-style: groove;
-  padding: 15px;
-  width: 400px;
+
+  border-style: solid;
+  border-width: 7px;
+  margin: 15px;
+  /*padding: 15px;*/
+  width: auto;
+  /* height: 300px; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
+
 .main__game--ball {
-  width: 60px;
+  width: auto;
   height: 60px;
+  font-size: 24px;
   padding-top: 20px;
   text-align: center;
+  /*margin-left: 20px;*/
+  background: white;
+  outline-style: solid;
+  outline-color: green;
 }
 .main__balls {
   padding: 10px;
-  border-style: solid;
+  height: 200px;
+  /* border-style: solid;
   border-width: 7px;
-  border-color: #15c3b1;
+  border-color: #15c3b1; */
   margin: 20px;
   font-family: 'Indie Flower';
   font-size: 20px;
@@ -90,8 +105,8 @@
 }
 
 .main__balls--ball {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   border-style: solid;
   border-width: 4px;
