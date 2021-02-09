@@ -33,7 +33,7 @@ function compareBalls() {
     htmlCard.classList.add('inside-balls');
     bingoArray.push(showArrayNumbers[showArrayNumbers.length - 1]);
     // bingoArray.sort();
-    if (bingoArray.length === 12) {
+    if (bingoArray.length === 15) {
       stopBalls();
 
       bingoHtml += `<div class="js-main__bingo">¡Has cantado 
@@ -68,7 +68,7 @@ function showBalls(ev) {
 //Random card
 function bingoCard() {
   let htmlBingo = '';
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 15; i++) {
     const number = getRandomNumber(20);
     if (!cardArrayNumbers.includes(number)) {
       htmlBingo += `<div class="main__container-game--ball" id="card-${number}"> ${number}</div>`;
