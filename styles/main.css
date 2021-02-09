@@ -2,35 +2,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: rgb(189, 185, 185);
 }
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* margin: 0 100px 50px 100px; */
 }
 .header__title {
-  width: 500px;
+  width: 300px;
 }
 .main {
   border-color: green;
   background-color: #d3f8f4;
-  margin: 0 100px 50px 100px;
 }
 .main__btn {
-  display: flex;
-  flex-direction: row-reverse;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 .main__title {
   font-size: 24px;
   font-family: 'Indie Flower';
   text-align: center;
-  padding-top: 15px;
 }
 
 .main__btn-ball {
   width: 150px;
   height: 30px;
-  background-color: #14d9c4;
+  /* background-color: #14d9c4; */
   text-align: center;
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -39,7 +40,9 @@
   border-width: 4px;
   border-color: #15c3b1;
 }
-.main__btn-play,
+.main__btn-play {
+  background-image: url();
+}
 .main__btn-stop {
   margin-left: 10px;
   width: 30px;
@@ -57,30 +60,44 @@
   color: #14d9c4;
   width: 15px;
 }
-.main__congratulations {
-}
+
 .js-main__bingo {
   font-size: 30px;
   text-align: center;
   /* font-family: 'Indie Flower'; */
   font-weight: bold;
+  display: flex;
 }
-
-.main__game {
+.js-main__bingo-B,
+.js-main__bingo-G {
+  color: #15c3b1;
+}
+.js-main__bingo-I {
+  color: rgb(255, 187, 0);
+}
+.js-main__bingo-N,
+.js-main__bingo-O {
+  color: tomato;
+}
+.main__container {
+  display: flex;
+  padding-top: 25px;
+}
+.main__container-game {
   border-color: crimson;
-
   border-style: solid;
   border-width: 7px;
-  margin: 15px;
+  /* margin: 15px 75px; */
   /*padding: 15px;*/
-  width: auto;
-  /* height: 300px; */
+  width: 50%;
+  height: 100%;
+  margin: 20px 20px 20px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.main__game--ball {
+.main__container-game--ball {
   width: auto;
   height: 60px;
   font-size: 24px;
@@ -91,22 +108,22 @@
   outline-style: solid;
   outline-color: green;
 }
-.main__balls {
-  padding: 10px;
+.main__container-balls {
+  /* padding: 10px; */
   height: auto;
+  width: 50%;
   /* border-style: solid;
   border-width: 7px;
   border-color: #15c3b1; */
-  margin: 20px;
+  margin: 15px 20px 20px 20px;
   font-family: 'Indie Flower';
   font-size: 20px;
   font-weight: bold;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.main__balls--ball {
+.main__container-balls--ball {
   width: 40px;
   height: 40px;
   text-align: center;
@@ -115,8 +132,8 @@
   border-color: #15c3b1;
   background-color: white;
   border-radius: 30px;
-  margin: 8px;
-  padding-top: 12px;
+  margin: 8px 2px;
+  padding-top: 4px;
 }
 .inside-balls {
   background-color: darkseagreen;

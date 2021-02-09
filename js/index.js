@@ -1,8 +1,8 @@
 'use strict';
 
-const balls = document.querySelector('.main__balls');
+const balls = document.querySelector('.main__container-balls');
 const newBallBtn = document.querySelector('.main__btn-ball');
-const game = document.querySelector('.main__game');
+const game = document.querySelector('.main__container-game');
 const playBtn = document.querySelector('.main__btn-play');
 const stopBtn = document.querySelector('.main__btn-stop');
 const bingo = document.querySelector('.main__congratulations');
@@ -32,10 +32,17 @@ function compareBalls() {
     );
     htmlCard.classList.add('inside-balls');
     bingoArray.push(showArrayNumbers[showArrayNumbers.length - 1]);
+    // bingoArray.sort();
     if (bingoArray.length === 12) {
       stopBalls();
 
-      bingoHtml += `<p class="js-main__bingo">¡¡¡¡¡BINGO!!!!!</p>`;
+      bingoHtml += `<div class="js-main__bingo">¡Has cantado 
+      <h2 class="js-main__bingo-B">B</h2>
+      <h2 class="js-main__bingo-I">I</h2>
+      <h2 class="js-main__bingo-N">N</h2>
+      <h2 class="js-main__bingo-G">G</h2>
+      <h2 class="js-main__bingo-O">O<h2>
+      !</div>`;
     }
     bingo.innerHTML = bingoHtml;
   }
@@ -47,13 +54,12 @@ function showBalls(ev) {
   for (let i = 0; i < 1; i++) {
     const number = getRandomNumber(20);
     if (!showArrayNumbers.includes(number)) {
-      htmlBalls += `<div class="main__balls--ball" id="ball-${number}"> ${number}</div>`;
+      htmlBalls += `<div class="main__container-balls--ball" id="ball-${number}"> ${number}</div>`;
       showArrayNumbers.push(number);
     } else {
       i--;
     }
   }
-  console.log(showArrayNumbers);
 
   balls.innerHTML += htmlBalls;
   compareBalls();
@@ -65,7 +71,7 @@ function bingoCard() {
   for (let i = 0; i < 12; i++) {
     const number = getRandomNumber(20);
     if (!cardArrayNumbers.includes(number)) {
-      htmlBingo += `<div class="main__game--ball" id="card-${number}"> ${number}</div>`;
+      htmlBingo += `<div class="main__container-game--ball" id="card-${number}"> ${number}</div>`;
       cardArrayNumbers.push(number);
     } else {
       i--;
