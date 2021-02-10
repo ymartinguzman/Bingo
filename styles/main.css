@@ -2,7 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgb(189, 185, 185);
+  /* background-color: grey; */
+}
+body {
+  background: #fffde7;
 }
 .header {
   display: flex;
@@ -14,7 +17,7 @@
 }
 .main {
   border-color: green;
-  background-color: #d3f8f4;
+  margin: 10px;
 }
 .main__btn {
   display: grid;
@@ -38,13 +41,10 @@
   border-width: 4px;
   border-color: #15c3b1;
 }
-.main__btn-play {
-  background-image: url();
-}
+.main__btn-play,
 .main__btn-stop {
-  margin-left: 10px;
-  width: 30px;
-  height: 30px;
+  background-color: transparent;
+  border: none;
 }
 
 .main__btn-play--image,
