@@ -24,13 +24,13 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
-.main__title {
+/* .main__title {
   font-size: 24px;
   font-family: 'Indie Flower';
   text-align: center;
-}
+} */
 
-.main__btn-ball {
+/* .main__btn-ball {
   width: 150px;
   height: 30px;
   text-align: center;
@@ -40,11 +40,13 @@ body {
   border-style: solid;
   border-width: 4px;
   border-color: #15c3b1;
-}
+} */
 .main__btn-play,
 .main__btn-stop {
   background-color: transparent;
   border: none;
+  width: 30px;
+  outline: none;
 }
 
 .main__btn-play--image,
@@ -81,8 +83,8 @@ body {
   padding-top: 25px;
 }
 .main__container-game {
-  border-color: crimson;
-  border-style: solid;
+  /* border-color: crimson;
+  border-style: solid; */
   border-width: 7px;
   width: 50%;
   height: 100%;
@@ -95,11 +97,12 @@ body {
 .main__container-game--ball {
   width: auto;
   font-size: 24px;
-  padding-top: 20px;
+  padding: 10px 0;
   text-align: center;
   background: white;
   outline-style: solid;
-  outline-color: green;
+  outline-color: grey;
+  color: #15c3b1;
 }
 .main__container-balls {
   height: auto;
@@ -118,12 +121,13 @@ body {
   text-align: center;
   border-style: solid;
   border-width: 4px;
-  border-color: #15c3b1;
+  border-color: orange;
   background-color: white;
   border-radius: 30px;
   margin: 8px 2px;
   padding-top: 4px;
 }
-.inside-balls {
-  background-color: darkseagreen;
+.inside-card {
+  background-color: #15c3b1;
+  color: #fffde7;
 }

@@ -30,7 +30,7 @@ function compareBalls() {
     const htmlCard = document.querySelector(
       `#card-${showArrayNumbers[showArrayNumbers.length - 1]}`
     );
-    htmlCard.classList.add('inside-balls');
+    htmlCard.classList.add('inside-card');
     bingoArray.push(showArrayNumbers[showArrayNumbers.length - 1]);
     // bingoArray.sort();
     if (bingoArray.length === 15) {
