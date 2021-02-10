@@ -32,17 +32,13 @@ function compareBalls() {
     );
     htmlCard.classList.add('inside-card');
     bingoArray.push(showArrayNumbers[showArrayNumbers.length - 1]);
-    // bingoArray.sort();
+
     if (bingoArray.length === 15) {
       stopBalls();
 
-      bingoHtml += `<div class="js-main__bingo">¡Has cantado 
-      <h2 class="js-main__bingo-B">B</h2>
-      <h2 class="js-main__bingo-I">I</h2>
-      <h2 class="js-main__bingo-N">N</h2>
-      <h2 class="js-main__bingo-G">G</h2>
-      <h2 class="js-main__bingo-O">O<h2>
-      !</div>`;
+      bingoHtml += `<div class="js-main__bingo">¡Enhorabuena!</div>`;
+      const title = document.querySelector('.header__title ');
+      title.classList.add('js-header__title');
     }
     bingo.innerHTML = bingoHtml;
   }
