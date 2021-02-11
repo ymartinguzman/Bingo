@@ -16,10 +16,16 @@ body {
 .header__title {
   width: 300px;
 }
+.main-container {
+  display: flex;
+  justify-content: center;
+}
 
 .main {
   margin: 10px;
+  width: 400px;
 }
+
 .main__btn {
   display: flex;
   justify-content: space-between;
@@ -36,7 +42,7 @@ body {
 .main__btn-play--image,
 .main__btn-stop--image {
   width: 30px;
-  height: 30px;
+  height: 40px;
 }
 .main__btn-newPlay {
   outline: none;
@@ -62,6 +68,7 @@ body {
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
   padding-top: 10px;
+  color: #15c3b1;
 }
 
 .main__container {
@@ -119,11 +126,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   color: #15c3b1;
   font-family: 'Courier New', Courier, monospace;
+}
+
+/*Reponsive web*/
+@media all and (min-width: 600px) {
+  .footer {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 @keyframes sayBingo {
@@ -145,5 +158,4 @@ body {
   animation-timing-function: linear;
   animation-name: sayBingo;
   animation-duration: 2s;
-  animation-iteration-count: 3s;
 }

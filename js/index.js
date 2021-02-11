@@ -98,7 +98,6 @@ function stopBalls() {
 }
 
 //Events
-// newBallBtn.addEventListener('click', showBalls);
 playBtn.addEventListener('click', autoBalls);
 stopBtn.addEventListener('click', stopBalls);
 newGame.addEventListener('click', newBingoGame);
