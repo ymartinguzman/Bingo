@@ -6,7 +6,6 @@
 body {
   background: #fffde7;
   height: 100vh;
-  /* background-color: #E9C46A; */
 }
 .header {
   display: flex;
@@ -24,6 +23,8 @@ body {
 .main {
   margin: 10px;
   width: 400px;
+  border: solid #e9c46a 3px;
+  padding: 10px;
 }
 
 .main__btn {
@@ -69,6 +70,7 @@ body {
   font-family: 'Courier New', Courier, monospace;
   padding-top: 10px;
   color: #15c3b1;
+  padding-top: 20px;
 }
 
 .main__container {
