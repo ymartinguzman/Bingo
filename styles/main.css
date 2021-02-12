@@ -129,16 +129,10 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  position: absolute;
+  bottom: 0;
   color: #15c3b1;
   font-family: 'Courier New', Courier, monospace;
-}
-
-/*Reponsive web*/
-@media all and (min-width: 600px) {
-  .footer {
-    position: absolute;
-    bottom: 0;
-  }
 }
 
 @keyframes sayBingo {
