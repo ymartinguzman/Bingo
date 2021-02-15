@@ -45,6 +45,9 @@ body {
   width: 30px;
   height: 40px;
 }
+.main__btn-hidden {
+  display: none;
+}
 .main__btn-newPlay {
   outline: none;
   background-color: #15c3b1;

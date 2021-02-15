@@ -6,7 +6,7 @@ const game = document.querySelector('.main__container-game');
 const playBtn = document.querySelector('.main__btn-play');
 const stopBtn = document.querySelector('.main__btn-stop');
 const bingo = document.querySelector('.main__congratulations');
-const newGame = document.querySelector('.main__btn-newPlay');
+const newGame = document.querySelector('.main__btn-hidden');
 
 //Get random number
 function getRandomNumber(max) {
@@ -39,6 +39,8 @@ function compareBalls() {
       bingoHtml += `<div class="js-main__bingo">¡Enhorabuena!</div>`;
       const title = document.querySelector('.header__title ');
       title.classList.add('js-header__title');
+      newGame.classList.add('main__btn-newPlay');
+      newGame.classList.remove('main__btn-hidden');
     }
     bingo.innerHTML = bingoHtml;
   }
