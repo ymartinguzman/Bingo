@@ -12,7 +12,7 @@
 * Como pulsar un montón de veces el botón es muy cansado, las bolitas salen de forma automática y aleatoria cada dos segundos, pudiendo parar el ritmo con el botón "Stop" y retomando con el botón "Play".
 * Cada vez que la bola coincide con el número del cartón, ambos se pintarán de color naranja para hacer match.
 
-![Bingo game](https://user-images.githubusercontent.com/70536114/107930403-3c675e80-6f7b-11eb-9b3c-adcff57ba1e6.PNG)
+![Bingo game](https://user-images.githubusercontent.com/70536114/107930877-ddeeb000-6f7b-11eb-972b-9519e1b182db.PNG)
 * El objetivo es que todos los números del cartón hayan coincidido con las bolas que han salido, y así cantar Bingo!
 * Si te ha gustado, puedes volver a jugar usando el botón "Nuevo cartón".
 
