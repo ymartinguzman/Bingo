@@ -91,7 +91,7 @@ function newBingoGame() {
 //SetInterval to show balls
 let timer;
 function autoBalls() {
-  timer = setInterval(showBalls, 1000);
+  timer = setInterval(showBalls, 2000);
 }
 
 //Stop setInterval
