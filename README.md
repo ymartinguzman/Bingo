@@ -25,7 +25,7 @@
 * JavaScript ES6
 * Diseño responsive
 * Metodología BEM
-
+* CSS Grid
 
 
 
