@@ -24,6 +24,7 @@
 * CSS3
 * JavaScript ES6
 * Diseño responsive
+* Metodología BEM
 
 
 
