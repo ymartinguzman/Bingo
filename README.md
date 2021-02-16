@@ -23,7 +23,7 @@
 * HTML5
 * CSS3
 * JavaScript ES6
-* Diseño responsive
+* Diseño responsive Mobile First
 * Metodología BEM
 * CSS Grid
 
