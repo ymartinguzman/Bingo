@@ -39,6 +39,10 @@ body {
   width: 30px;
   outline: none;
 }
+.main__btn-play,
+.main__btn-stop:hover {
+  cursor: pointer;
+}
 
 .main__btn-play--image,
 .main__btn-stop--image {
@@ -64,6 +68,7 @@ body {
 .main__btn-newPlay:hover {
   border-bottom-width: 0;
   border-top-width: 4px;
+  cursor: pointer;
 }
 
 .js-main__bingo {
